@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/ebs7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="250dp"
+            android:src="@drawable/logo_update"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="Your health, Our passion"/>-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentBottom="true">
+
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_weight="1"
+                android:layout_height="80dp">
+                <ImageView
+                    android:id="@+id/secure"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/shield"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:layout_below="@+id/secure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/white"
+                    android:text="Secure"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_weight="1"
+                android:layout_height="80dp">
+                <ImageView
+                    android:id="@+id/conv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/thumbs_up"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:layout_below="@+id/conv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/white"
+                    android:text="Conventent"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_weight="1"
+                android:layout_height="80dp">
+                <ImageView
+                    android:id="@+id/reliable"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/running"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:layout_below="@+id/reliable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/white"
+                    android:text="Reliable"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginBottom="48dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnSignInx"
+            android:layout_width="0dp"
+            android:onClick="openLogin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:text="Login"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Register"
+            android:textColor="@android:color/white"
+           />
+
+    </LinearLayout>
+
+</RelativeLayout>

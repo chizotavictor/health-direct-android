@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#253559</color>-->
+    <!--<color name="colorPrimaryDark">#253559</color>-->
+    <!--<color name="colorAccent">#9504cd</color>-->
+    <!--<color name="dimprimary">#1E3D81</color>-->
+    <!--<color name="navback">#F3A748</color>-->
+    <!--<color name="ash">#EEE3E3</color>-->
+
+    <color name="colorPrimary">#253559</color>
+    <color name="colorPrimaryDark">#253559</color>
+    <color name="colorAccent">#9403cd</color>
+    <color name="dimprimary">#1E3D81</color>
+    <color name="navback">#F3A748</color>
+    <color name="ash">#EEE3E3</color>
+</resources>
